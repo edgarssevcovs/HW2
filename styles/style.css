@@ -56,7 +56,7 @@ li a {
 }
 
 a:hover {
-    background-image: url(/img/menu-hover.png);
+    background-image: url(img/menu-hover.png);
     color: #fff;
 }
 
@@ -97,7 +97,7 @@ a:hover {
     grid-area: hero-feature;
     height: 550px;
     width:100%;
-    background-image: url(/img/hero-bg.png);
+    background-image: url(img/hero-bg.png);
     transition: 0.3s;
 }
 
@@ -135,7 +135,7 @@ a:hover {
     grid-area: ad;
     height: 550px;
     width: 100%;
-    background-image: url(/img/add.jpg);
+    background-image: url(img/add.jpg);
     background-repeat: no-repeat;
     background-color: #00050b;
 }
