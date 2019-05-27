@@ -56,7 +56,7 @@ li a {
 }
 
 a:hover {
-    background-image: url(/img/menu-hover.png);
+    background-image: url(img/menu-hover.png);
     color: #fff;
 }
 
@@ -97,7 +97,7 @@ a:hover {
     grid-area: hero-feature;
     height: 550px;
     width:100%;
-    background-image: url(/img/hero-bg.png);
+    background-image: url(img/hero-bg.png);
     transition: 0.3s;
 }
 
@@ -135,7 +135,7 @@ a:hover {
     grid-area: ad;
     height: 550px;
     width: 100%;
-    background-image: url(/img/add.jpg);
+    background-image: url(img/add.jpg);
     background-repeat: no-repeat;
     background-color: #00050b;
 }
@@ -256,4 +256,160 @@ a:hover {
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
+}
+
+@media (max-width: 576px) {
+    
+    .container {
+        margin: 0 auto;
+        height: auto;
+        max-width: 576px;
+    }
+    
+    .navbar {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "nav-brand nav-brand"
+                             "nav-menu nav-tools";
+        height: auto;
+        max-width: 576px;
+        background-color: #292929; 
+    }
+    
+    .nav-brand {
+        grid-area: nav-brand;
+        height: 30px;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .nav-menu {
+        grid-area: nav-menu;
+
+    }
+
+    ul {
+        list-style-type:none;
+    }
+
+    li {
+        display: inline;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    li a {
+        min-width:0px;
+        font-size: 14px;
+    }
+
+    a:hover {
+        background-image: url();
+        color:#fff;
+    }
+
+    .nav-tools {
+        grid-area: nav-tools;
+
+    }
+    
+    #search {
+        height:30px;
+        color: #cecece;
+        border: none;
+        border-radius: 8px 0px 0px 8px;
+        text-align: center;
+    }
+    
+    .button {
+        width: 20px;
+        height: 30px;
+        border: none;
+        border-radius: 0px 8px 8px 0px;
+        background-color: #626262;
+        color: #b3b3b3;
+    }
+
+    .hero {
+        display: grid;
+        grid-template-areas: "hero-feature";
+        grid-template-columns: 100%;
+        height: auto;
+    }
+    
+    .hero-feature {
+        grid-area: hero-feature;
+        background-image: url(img/hero-bg.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .hero-feature:hover {
+        opacity: 0.9;
+    }
+    
+    .hero-feature-title {
+        padding-top: 170px;
+        font-family: calibri;
+        font-weight: bold;
+        text-align: center;
+        color: #212121;
+        font-size: 20px;
+    }
+    
+    .hero-feature-subtitle {
+        text-align: center;
+        color: #212121;
+        font-family: calibri;
+        font-size: 12px;
+        background-color: #fff;
+        border-radius: 8px;
+        margin: 0 auto;
+    }
+
+    .content {
+        display: grid;
+        grid-template-areas: "article";
+        grid-template-columns: 100%;
+    }
+    
+    .article {
+        display: grid;
+        grid-area: article;
+        grid-template-areas: "article-feature"
+                             "article-listing";
+        grid-template-columns: 100%;
+        height: auto;
+        background-color: #444444;
+    }
+    
+    .article-feature {
+        grid-area: article-feature;
+        width:auto;
+    }
+    
+    .aricle-listing {
+        grid-area: article-listing;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .article-listing h1 {
+        font-family: calibri;
+        font-size: 30px;
+        text-align: center;
+        font-weight: bold;
+        color: #fff;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    
+    .article-listing p {
+        font-family: calibri;
+        font-size: 13px;
+        color: #dedede;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    
 }
